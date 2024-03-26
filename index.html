@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+</head>
+<body>
+    <div class="control-buttons">
+    <span>Start Game</span>
+    </div>
+    <div class="info-container">
+    <div class="name">
+        Hello: <span></span>
+    </div>
+    <div class="tries">
+        Wrong Tries: <span>0</span>
+    </div>
+    </div>
+    <div class="memory-game-blocks">
+    <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/Angular.png" alt="Angular Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/Angular.png" alt="Angular Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/Vue.png" alt="Vue Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/Vue.png" alt="Vue Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="css3">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/CSS3.png" alt="CSS3 Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="css3">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/CSS3.png" alt="CSS3 Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/github.png" alt="Github Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/github.png" alt="Github Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="js">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/javascript.png" alt="Javascript Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="js">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/javascript.png" alt="Javascript Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="html5">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/html.png" alt="HTML Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="html5">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/html.png" alt="HTML Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="jest">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/jest.png" alt="Jest Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="jest">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/jest.png" alt="Jest Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="mongodb">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/mongoDB.png" alt="mongoDB Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="mongodb">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/mongoDB.png" alt="mongoDB Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/python.jpg" alt="Python Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/python.jpg" alt="Python Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/React.png" alt="React Image">
+        </div>
+    </div>
+    <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+        <img decoding="async" src="imgs/React.png" alt="React Image">
+        </div>
+    </div>
+    </div>
+    <div class="winner-popup" id="winner-popup">
+        <div class="content">
+            <h3>You Won!</h3>
+            <div class="btn-options">
+                <button class="new-game" id="new-game">Start New Game</button>
+                <button class="cancel" id="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <audio id="success" src="Sounds/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="Sounds/failure.mp3" preload="auto"></audio>
+    <audio id="victory" src="Sounds/victory.mp3" preload="auto"></audio>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
